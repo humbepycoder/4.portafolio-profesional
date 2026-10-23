@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="portafolio profesional de desarrollo web fullstack"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Portafolio Profesional</title>
+  </head>
+  <body class="h-screen overflow-hidden bg-slate-100 dark:bg-[#202021]">
+    <div class="flex flex-col h-full">
+      <header
+        class="flex shrink-0 md:hidden items-center justify-center h-12 bg-slate-900 gap-10 dark:text-white"
+      >
+        <h1 class="hidden">Portafolio profesional</h1>
+        <a href="#"><i class="fa-solid fa-house"></i></a>
+        <a href="#"><i class="fa-solid fa-user"></i></a>
+        <a href="#"><i class="fa-solid fa-code"></i></a>
+        <a href="#"><i class="fa-solid fa-folder-open"></i></a>
+        <a href="#"><i class="fa-solid fa-phone"></i></a>
+      </header>
+
+      <div class="flex flex-1 overflow-hidden">
+        <aside
+          class="hidden md:flex md:flex-col w-48 px-2 py-12 bg-slate-100 border border-slate-900 sticky top-0 left-0 z-10 overflow-hidden dark:bg-[#202021] dark:border-r-slate-50 h-screen"
+        >
+          <nav>
+            <ul class="flex flex-col gap-3">
+              <li class="flex items-center">
+                <a
+                  href="#home"
+                  class="flex w-full border-transparent border-2 text-black rounded px-1 py-2 font-medium text-2xl gap-2 items-center hover:bg-[#69e6e839] dark:hover:border-white dark:text-white dark:hover:dark:bg-[#3aeff226]"
+                  ><span class="flex justify-center w-8">
+                    <i class="fa-solid fa-house"></i>
+                  </span>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="flex">
+                <a
+                  href="#Sobre Mi"
+                  class="flex w-full border-transparent border-2 text-black dark:hover:border-white dark:text-white rounded px-1 py-2 font-medium text-2xl gap-2 items-center hover:bg-[#69e6e839] dark:hover:dark:bg-[#3aeff226]"
+                  ><span class="flex justify-center w-8">
+                    <i class="fa-solid fa-user"></i>
+                  </span>
+                  <span>Sobre Mí</span>
+                </a>
+              </li>
+              <li class="flex">
+                <a
+                  href="#habilidades"
+                  class="flex w-full border-transparent border-2 text-black hover:bg-[#69e6e839] dark:hover:border-white dark:text-white rounded px-1 py-2 font-medium text-2xl gap-2 items-center dark:hover:dark:bg-[#3aeff226]"
+                  ><span class="flex justify-center w-8">
+                    <i class="fa-solid fa-code"></i>
+                  </span>
+                  <span>Habilidades</span>
+                </a>
+              </li>
+              <li class="flex">
+                <a
+                  href="#proyectos"
+                  class="flex w-full border-transparent border-2 text-black hover:bg-[#69e6e839] dark:hover:border-white dark:text-white rounded px-1 py-2 font-medium text-2xl gap-2 items-center dark:hover:dark:bg-[#3aeff226]"
+                  ><span class="flex justify-center w-8">
+                    <i class="fa-solid fa-folder-open"></i>
+                  </span>
+                  <span>Proyectos</span>
+                </a>
+              </li>
+              <li class="flex">
+                <a
+                  href="#contacto"
+                  class="flex w-full border-transparent border-2 text-black hover:bg-[#69e6e839] dark:hover:border-white dark:text-white rounded px-1 py-2 font-medium text-2xl gap-2 items-center dark:hover:dark:bg-[#3aeff226]"
+                  ><span class="flex justify-center w-8">
+                    <i class="fa-solid fa-phone"></i>
+                  </span>
+                  <span>Contacto</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <main
+          class="flex flex-col flex-1 bg-slate-100 dark:bg-[#202021] overflow-y-auto snap-y snap-mandatory"
+        >
+          <section
+            class="h-[calc(100vh-3rem)] snap-start shrink-0 md:h-screen flex items-center justify-center px-3 md:px-20 md:py-12"
+            id="home"
+          >
+            <div
+              class="flex flex-col w-full md:h-full rounded items-center justify-center bg-[#69e6e839] dark:bg-[#3aeff226]"
+            >
+              <div class="flex flex-col items-center py-8 gap-5">
+                <img
+                  src="./img/WhatsApp Image 2026-10-14 at 11.36.21 AM.jpeg"
+                  alt="Humberto Centeno"
+                  class="w-56 h-auto md:w-80 md:h-auto rounded-full"
+                />
+                <div class="flex flex-col items-center gap-1.5">
+                  <h2
+                    class="text-3xl md:text-5xl font-extrabold whitespace-nowrap dark:text-slate-100"
+                  >
+                    Humberto Centeno
+                  </h2>
+                  <span class="md:text-2xl dark:text-slate-100"
+                    >Programador Web Fullstack</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            id="Sobre Mi"
+            class="min-h-[calc(100vh-3rem)] md:min-h-screen w-full snap-start shrink-0 flex items-center justify-center p-4 md:p-12 dark:bg-slate-950"
+          >
+            <!-- Tarjeta Contenedora Principal -->
+            <div
+              class="flex flex-col w-full max-w-5xl max-h-[85vh] overflow-y-auto rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 md:p-10 shadow-2xl space-y-6"
+            >
+              <!-- Encabezado con acento de color -->
+              <div
+                class="flex items-center gap-3 border-b border-slate-100 dark:border-slate-800 pb-4"
+              >
+                <span
+                  class="flex items-center justify-center w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 text-xl"
+                >
+                  <i class="fa-solid fa-user"></i>
+                </span>
+                <h2
+                  class="text-2xl md:text-4xl font-bold text-slate-900 dark:text-white"
+                >
+                  Sobre Mí
+                </h2>
+              </div>
+
+              <!-- Contenido principal divido en columnas para pantallas medianas/grandes -->
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+                <!-- Párrafos descriptivos -->
+                <div
+                  class="md:col-span-2 space-y-4 text-slate-600 dark:text-slate-300 text-base md:text-lg leading-relaxed text-pretty break-word"
+                >
+                  <p>
+                    <span class="text-slate-900 dark:text-white font-semibold"
+                      >¡Hola! Soy Humberto.</span
+                    >
+                    Apasionado por la tecnología y la resolución práctica de
+                    problemas, me encuentro enfocado en el desarrollo web
+                    moderno, combinando la construcción de interfaces atractivas
+                    con
+                    <span class="text-cyan-600 dark:text-cyan-400 font-medium"
+                      >HTML5, Tailwind CSS y JavaScript</span
+                    >, junto con una sólida lógica en el backend y control de
+                    versiones con
+                    <span class="text-cyan-600 dark:text-cyan-400 font-medium"
+                      >Git y GitHub</span
+                    >.
+                  </p>
+                  <p>
+                    Mi formación académica en
+                    <span class="text-slate-900 dark:text-white font-semibold"
+                      >Ingeniería Informática</span
+                    >
+                    me ha brindado bases firmes en arquitectura de software,
+                    estructuras de datos y lógica de programación. Me
+                    caracterizo por ser un desarrollador autodidacta, orientado
+                    al detalle y enfocado en escribir código limpio, mantenible
+                    y responsivo.
+                  </p>
+                </div>
+
+                <!-- Tarjeta Lateral con Puntos Clave (Highlight) -->
+                <div
+                  class="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/50 rounded-2xl p-5 space-y-4"
+                >
+                  <ul
+                    class="space-y-3 text-sm md:text-base text-slate-600 dark:text-slate-300"
+                  >
+                    <li class="flex items-start gap-2">
+                      <i
+                        class="fa-solid fa-graduation-cap text-cyan-500 mt-1"
+                      ></i>
+                      <span>Estudiante de Ing. Informática</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <i class="fa-solid fa-layer-group text-cyan-500 mt-1"></i>
+                      <span>Enfoque: Fullstack Web Development</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <i class="fa-solid fa-code-commit text-cyan-500 mt-1"></i>
+                      <span
+                        >Metodología: Código limpio, BEM y Responsive
+                        Design</span
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="#"
+                        class="hidden md:flex md:flex-col md:rounded-lg md:gap-2 md:items-center md:justify-center bg-gray-700 px-4 pt-2 pb-5"
+                      >
+                        <span>Descargar CV</span>
+                        <i class="fa-solid fa-download"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex items-center justify-center">
+                  <a
+                    href="#"
+                    class="md:hidden flex flex-col rounded-lg gap-2 items-center justify-center dark:hover:bg-gray-500 dark:text-slate-50 dark:bg-gray-700 px-4 pt-2 pb-5"
+                  >
+                    <span>Descargar CV</span>
+                    <i class="fa-solid fa-download"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            id="habilidades"
+            class="min-h-[calc(100vh-3rem)] md:min-h-screen w-full snap-start shrink-0 flex justify-center items-start p-4 md:p-12 dark:bg-cyan-950"
+          >
+            <!-- Contenedor principal de la tarjeta de sección -->
+            <div
+              class="flex flex-col dark:bg-slate-950 w-full h-full px-6 py-6 md:px-8 rounded-3xl gap-6 shadow-xl border border-slate-200/50 dark:border-slate-800"
+            >
+              <!-- Título con borde inferior más sutil -->
+              <h2
+                class="text-2xl md:text-4xl font-bold text-slate-900 dark:text-white flex justify-center border-b border-slate-200 dark:border-slate-800 pb-4"
+              >
+                Habilidades
+              </h2>
+
+              <!-- GRID: Cambiamos gap-1 por gap-4 o gap-6 para que no estén pegadas -->
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4 items-start">
+                <!-- Tarjeta de Habilidad 1 -->
+                <div
+                  class="bg-slate-100 dark:bg-slate-900 p-4 rounded-2xl flex flex-col items-center justify-center gap-3 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group"
+                >
+                  <img
+                    src="./img/Python.png"
+                    alt="vs code"
+                    class="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <span
+                    class="text-slate-800 dark:text-slate-200 font-medium text-sm"
+                    >Python</span
+                  >
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div
+                  class="bg-slate-100 dark:bg-slate-900 p-4 rounded-2xl flex flex-col items-center justify-center gap-3 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group"
+                >
+                  <img
+                    src="./img/Visual Studio Code (VS Code).png"
+                    alt="vs code"
+                    class="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <span
+                    class="text-slate-800 dark:text-slate-200 font-medium text-sm"
+                    >VS Code</span
+                  >
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div
+                  class="bg-slate-100 dark:bg-slate-900 p-4 rounded-2xl flex flex-col items-center justify-center gap-3 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group"
+                >
+                  <img
+                    src="./img/HTML5.png"
+                    alt="HTML 5"
+                    class="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <span
+                    class="text-slate-800 dark:text-slate-200 font-medium text-sm"
+                    >HTML5</span
+                  >
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div
+                  class="bg-slate-100 dark:bg-slate-900 p-4 rounded-2xl flex flex-col items-center justify-center gap-3 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group"
+                >
+                  <img
+                    src="./img/CSS3.png"
+                    alt="CSS3"
+                    class="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <span
+                    class="text-slate-800 dark:text-slate-200 font-medium text-sm"
+                    >CSS3</span
+                  >
+                </div>
+
+                <div
+                  class="bg-slate-100 dark:bg-slate-900 p-4 rounded-2xl flex flex-col items-center justify-center gap-3 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group"
+                >
+                  <img
+                    src="./img/Git.png"
+                    alt="Git"
+                    class="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <span
+                    class="text-slate-800 dark:text-slate-200 font-medium text-sm"
+                    >Git</span
+                  >
+                </div>
+
+                <div
+                  class="bg-slate-100 dark:bg-slate-900 p-4 rounded-2xl flex flex-col items-center justify-center gap-3 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group"
+                >
+                <img src="./img/githubwhite.png" alt="GitHub" class="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300 rounded-full">
+                  <span
+                    class="text-slate-800 dark:text-slate-200 font-medium text-sm"
+                    >GitHub</span
+                  >
+                </div>
+
+                <div
+                  class="bg-slate-100 dark:bg-slate-900 p-4 rounded-2xl flex flex-col items-center justify-center gap-3 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group"
+                >
+                <img src="./img/PHP.png" alt="php" class="w-12 h-12 object-contain group-hover:scale-110 trasnsition-transform duration-300">
+                  <span
+                    class="text-slate-800 dark:text-slate-200 font-medium text-sm"
+                    >php</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer></footer>
+    </div>
+  </body>
+</html>
