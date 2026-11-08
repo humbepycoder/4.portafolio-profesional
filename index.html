@@ -23,11 +23,11 @@
         class="flex shrink-0 md:hidden items-center justify-center h-12 bg-slate-900 gap-10 dark:text-white"
       >
         <h1 class="hidden">Portafolio profesional</h1>
-        <a href="#"><i class="fa-solid fa-house"></i></a>
-        <a href="#"><i class="fa-solid fa-user"></i></a>
-        <a href="#"><i class="fa-solid fa-code"></i></a>
-        <a href="#"><i class="fa-solid fa-folder-open"></i></a>
-        <a href="#"><i class="fa-solid fa-phone"></i></a>
+        <a href="#home"><i class="fa-solid fa-house"></i></a>
+        <a href="#Sobre Mi"><i class="fa-solid fa-user"></i></a>
+        <a href="#habilidades"><i class="fa-solid fa-code"></i></a>
+        <a href="#proyectos"><i class="fa-solid fa-folder-open"></i></a>
+        <a href="#contacto"><i class="fa-solid fa-phone"></i></a>
       </header>
 
       <div class="flex flex-1 overflow-hidden">
@@ -123,11 +123,9 @@
             id="Sobre Mi"
             class="min-h-[calc(100vh-3rem)] md:min-h-screen w-full snap-start shrink-0 flex items-center justify-center p-4 md:p-12 dark:bg-slate-950"
           >
-            <!-- Tarjeta Contenedora Principal -->
             <div
               class="flex flex-col w-full max-w-5xl max-h-[85vh] overflow-y-auto rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 md:p-10 shadow-2xl space-y-6"
             >
-              <!-- Encabezado con acento de color -->
               <div
                 class="flex items-center gap-3 border-b border-slate-100 dark:border-slate-800 pb-4"
               >
@@ -143,9 +141,7 @@
                 </h2>
               </div>
 
-              <!-- Contenido principal divido en columnas para pantallas medianas/grandes -->
               <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-                <!-- Párrafos descriptivos -->
                 <div
                   class="md:col-span-2 space-y-4 text-slate-600 dark:text-slate-300 text-base md:text-lg leading-relaxed text-pretty break-word"
                 >
@@ -178,7 +174,6 @@
                   </p>
                 </div>
 
-                <!-- Tarjeta Lateral con Puntos Clave (Highlight) -->
                 <div
                   class="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/50 rounded-2xl p-5 space-y-4"
                 >
@@ -231,20 +226,16 @@
             id="habilidades"
             class="min-h-[calc(100vh-3rem)] md:min-h-screen w-full snap-start shrink-0 flex justify-center items-start p-4 md:p-12 dark:bg-cyan-950"
           >
-            <!-- Contenedor principal de la tarjeta de sección -->
             <div
               class="flex flex-col dark:bg-slate-950 w-full h-full px-6 py-6 md:px-8 rounded-3xl gap-6 shadow-xl border border-slate-200/50 dark:border-slate-800"
             >
-              <!-- Título con borde inferior más sutil -->
               <h2
                 class="text-2xl md:text-4xl font-bold text-slate-900 dark:text-white flex justify-center border-b border-slate-200 dark:border-slate-800 pb-4"
               >
                 Habilidades
               </h2>
 
-              <!-- GRID: Cambiamos gap-1 por gap-4 o gap-6 para que no estén pegadas -->
               <div class="grid grid-cols-2 md:grid-cols-4 gap-4 items-start">
-                <!-- Tarjeta de Habilidad 1 -->
                 <div
                   class="bg-slate-100 dark:bg-slate-900 p-4 rounded-2xl flex flex-col items-center justify-center gap-3 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group"
                 >
@@ -259,7 +250,6 @@
                   >
                 </div>
 
-                <!-- Tarjeta 2 -->
                 <div
                   class="bg-slate-100 dark:bg-slate-900 p-4 rounded-2xl flex flex-col items-center justify-center gap-3 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group"
                 >
@@ -274,7 +264,6 @@
                   >
                 </div>
 
-                <!-- Tarjeta 3 -->
                 <div
                   class="bg-slate-100 dark:bg-slate-900 p-4 rounded-2xl flex flex-col items-center justify-center gap-3 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group"
                 >
@@ -289,7 +278,6 @@
                   >
                 </div>
 
-                <!-- Tarjeta 4 -->
                 <div
                   class="bg-slate-100 dark:bg-slate-900 p-4 rounded-2xl flex flex-col items-center justify-center gap-3 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group"
                 >
@@ -321,7 +309,11 @@
                 <div
                   class="bg-slate-100 dark:bg-slate-900 p-4 rounded-2xl flex flex-col items-center justify-center gap-3 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group"
                 >
-                <img src="./img/githubwhite.png" alt="GitHub" class="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300 rounded-full">
+                  <img
+                    src="./img/githubwhite.png"
+                    alt="GitHub"
+                    class="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300 rounded-full"
+                  />
                   <span
                     class="text-slate-800 dark:text-slate-200 font-medium text-sm"
                     >GitHub</span
@@ -331,13 +323,150 @@
                 <div
                   class="bg-slate-100 dark:bg-slate-900 p-4 rounded-2xl flex flex-col items-center justify-center gap-3 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group"
                 >
-                <img src="./img/PHP.png" alt="php" class="w-12 h-12 object-contain group-hover:scale-110 trasnsition-transform duration-300">
+                  <img
+                    src="./img/PHP.png"
+                    alt="php"
+                    class="w-12 h-12 object-contain group-hover:scale-110 trasnsition-transform duration-300"
+                  />
                   <span
                     class="text-slate-800 dark:text-slate-200 font-medium text-sm"
                     >php</span
                   >
                 </div>
+
+                <div
+                  class="bg-slate-100 dark:bg-slate-900 p-4 rounded-2xl flex flex-col items-center justify-center gap-3 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group"
+                >
+                  <img
+                    src="./img/JavaScript.png"
+                    alt="JavaScript"
+                    class="w-12 h-12 object-contain group-hover:scale-110 trasnsition-transform duration-300"
+                  />
+                  <span
+                    class="text-slate-800 dark:text-slate-200 font-medium text-sm"
+                    >JavaScript</span
+                  >
+                </div>
               </div>
+            </div>
+          </section>
+
+          <section
+            id="proyectos"
+            class="min-h-[calc(100vh-3rem)] md:min-h-screen w-full snap-start shrink-0 flex p-4 md:p-12 dark:bg-slate-950"
+          >
+            <div
+              class="flex flex-col w-full bg-slate-600 rounded-4xl p-6 md:p-10"
+            >
+              <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">
+                Proyectos
+              </h2>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div
+                  class="group flex flex-col overflow-hidden rounded-2xl bg-slate-700 shadow-lg"
+                >
+                  <div class="aspect-video overflow-hidden">
+                    <img
+                      src="./img/Captura de pantalla 2026-11-08 184950.png"
+                      alt="Captura del proyecto 1"
+                      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-2 p-4">
+                    <h3 class="text-lg font-semibold text-white">
+                      Youtube Clon
+                    </h3>
+
+                    <a
+                      href="https://github.com/humbepycoder/mini-proyecto-yt.git"
+                      class="mt-2 text-sm font-semibold text-cyan-300 hover:underline"
+                    >
+                      Ver proyecto →
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="group flex flex-col overflow-hidden rounded-2xl bg-slate-700 shadow-lg"
+                >
+                  <div class="aspect-video overflow-hidden">
+                    <img
+                      src="./img/Captura de pantalla 2026-11-08 185203.png"
+                      alt="Captura del proyecto 2"
+                      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-2 p-4">
+                    <h3 class="text-lg font-semibold text-white">
+                      Curriculum
+                    </h3>
+
+                    <a
+                      href="https://github.com/humbepycoder/1.curriculum-harvard.git"
+                      class="mt-2 text-sm font-semibold text-cyan-300 hover:underline"
+                    >
+                      Ver proyecto →
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            id="contacto"
+            class="min-h-[calc(100vh-3rem)] md:min-h-screen w-full snap-start shrink-0 flex p-4 md:p-12 dark:bg-cyan-900"
+          >
+            <div
+              class="flex flex-col rounded-4xl bg-amber-300 w-full p-6 md:p-10"
+            >
+              <h2 class="text-2xl font-bold mb-6">Contact Me</h2>
+
+              <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="flex flex-col gap-1">
+                  <label for="nombre">Nombre</label>
+                  <input
+                    id="nombre"
+                    type="text"
+                    class="rounded-lg p-2 bg-white"
+                  />
+                </div>
+
+                <div class="flex flex-col gap-1">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    class="rounded-lg p-2 bg-white"
+                  />
+                </div>
+
+                <div class="flex flex-col gap-1 md:col-span-2">
+                  <label for="asunto">Asunto</label>
+                  <input
+                    id="asunto"
+                    type="text"
+                    class="rounded-lg p-2 bg-white"
+                  />
+                </div>
+
+                <div class="flex flex-col gap-1 md:col-span-2">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea
+                    id="mensaje"
+                    rows="5"
+                    class="rounded-lg p-2 bg-white"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="md:col-span-2 rounded-lg bg-cyan-900 text-white p-3 font-semibold cursor-pointer"
+                >
+                  Enviar
+                </button>
+              </form>
             </div>
           </section>
         </main>
